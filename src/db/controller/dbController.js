@@ -2,13 +2,6 @@
 
 import DB from "../model/dbConnection";
 
-// SQL commands to input the data
-
-//INSERT INTO posts ("userId",id,title,body) 
-//VALUES (1,1, 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit', 'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto');
-
-//INSERT INTO "comments" (id,"postId",name,email,body) VALUES (1,1,'aadi','hello@gmail.com','random textttttt');
-
 export default {
 
     async clearTables() {
@@ -36,21 +29,6 @@ export default {
             return error;
           } 
         },
-
-    async createPost() {
-        try {       
-            const cmd = {
-                text: 'INSERT INTO posts (userid, id, title, body) VALUES($1, $2, $3, $4)',
-                values: [1, 1,'.....Sample Post.....','..........Sample body.....'],
-              };
-            const result = await DB.query(cmd);
-            return result;
-          } catch(error) {
-            return error;
-          } 
-        },
-
-
     async  getallUser(){
     try {      
         const { rows } = await DB.query('SELECT * FROM User');

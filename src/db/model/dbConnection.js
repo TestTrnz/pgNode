@@ -10,7 +10,8 @@ const client = new Client({
   }); 
 
 client.connect();
-  
+
+
 export default {
    query(command, args){
        return new Promise((resolve, reject) => {
