@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\config",
+    "\\src",
+    "\\src\\db",
+    "\\src\\db\\controller",
+    "\\src\\db\\model"
+  ],
+  "SelectedNode": "\\src\\db\\controller\\dbController.js",
+  "PreviewInSolutionExplorer": false
+}

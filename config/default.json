@@ -1,0 +1,4 @@
+{
+    "app": {},
+    "dbURL": "postgresql://myuser:mypass@localhost/mydb"
+}
